@@ -11,7 +11,7 @@ Master slave working simulation implemented with pthread.
 ## LU decompose
 Implementation of LU decomposition using openmp.
 
-## life game
+## life of game
 Implementation of John Conway's life of game with multi node using MPI.
 
 ## pagerank
