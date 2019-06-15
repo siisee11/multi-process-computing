@@ -19,7 +19,8 @@
 
 #define REAL double
 #define BS 32				// block size
-#define TOLERANCE 1.0e+3
+#define TOLERANCE 10.0e-0
+
 
 int n;
 int bs;			
@@ -80,6 +81,7 @@ void matrix_init(){
 	
 	for (int row = 0; row < n; row++) {
 		for (int col = 0; col < n; col++) {
+			//r = rand()%10+1;
 			r = rand();
 			A[row*NP+col] = r;
 			A_save[row*NP+col] = r;
@@ -298,12 +300,12 @@ int main(int argc, char *argv[]){
 				check_mode = true;
 				break;
 			default:
-				printf("Usage: %s [-n] [-d] <size> <seed> <thread number> <print>\n", argv[0]);
+				printf("Usage: %s [-n|-d] <size> <seed> <thread number> <print>\n", argv[0]);
 				exit(EXIT_FAILURE);
 		}
 	}
 	if (optind != argc-4) {
-		printf("Usage: %s [-n] [-d] <size> <seed> <thread number> <print>\n", argv[0]);
+		printf("Usage: %s [-n|-d] <size> <seed> <thread number> <print>\n", argv[0]);
 		exit(EXIT_FAILURE);
 	}
 
