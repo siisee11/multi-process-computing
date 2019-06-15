@@ -300,12 +300,12 @@ int main(int argc, char *argv[]){
 				check_mode = true;
 				break;
 			default:
-				printf("Usage: %s [-n] <size> <seed> <thread number> <print>\n", argv[0]);
+				printf("Usage: %s [-n|-d] <size> <seed> <thread number> <print>\n", argv[0]);
 				exit(EXIT_FAILURE);
 		}
 	}
 	if (optind != argc-4) {
-		printf("Usage: %s [-n] <size> <seed> <thread number> <print>\n", argv[0]);
+		printf("Usage: %s [-n|-d] <size> <seed> <thread number> <print>\n", argv[0]);
 		exit(EXIT_FAILURE);
 	}
 

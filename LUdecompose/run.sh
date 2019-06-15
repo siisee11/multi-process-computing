@@ -26,7 +26,7 @@ show_help()
 -l			Log file. #have to use with -a option.
 -c			Continuously increase thread count 1 to 16 (matrix size must be less than 1000)
 -C			Continuously increase matrix size 10 to 2000 (thread count must be over 10)
-[-n]		No check mode.
+[-n]			No check mode.
 -H			Help
 		
 For Example: ./run.h -f ./lu -r 1000 3000 10
