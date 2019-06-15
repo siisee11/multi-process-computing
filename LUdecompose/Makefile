@@ -1,10 +1,7 @@
 default: lu
 
-lu: lu.c
-	gcc -g -Wall -o lu lu.c -fopenmp -O2
-
-par_lu: par_lu.c
-	gcc -g -O2 -fopenmp -Wall -o par_lu par_lu.c
+lu: lu.cpp
+	g++ -g -ggdb -Wall -o lu lu.cpp -fopenmp -O2 
 
 clean:
-	rm -f lu par_lu 
+	rm -f lu 
