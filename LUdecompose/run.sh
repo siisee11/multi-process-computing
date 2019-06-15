@@ -29,7 +29,7 @@ show_help()
 [-n]			No check mode.
 -H			Help
 		
-For Example: ./run.h -f ./lu -r 1000 3000 10
+For Example: ./run.sh -f ./lu -r 1000 3000 10
 "
 exit ${E_ARG}
 }
