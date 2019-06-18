@@ -1,0 +1,3 @@
+# openmp
+
+practice for openmp
